@@ -27,29 +27,28 @@ $(document).ready(function() {
       $("body").width() * Math.random(),
       Math.random() * 1000
     );
+
     $('body').append(dancer.$node);
-
-    // var spinDancer = new dancerMakerFunction(
-    //   $("body").height() * Math.random(),
-    //   $("body").width() * Math.random(),
-    //   Math.random() * 1000
-    // );
-    // $('body').append(spinDancer.$node);
-
-    //   var bouncyDancer = new dancerMakerFunction(
-    //   $("body").height() * Math.random(),
-    //   $("body").width() * Math.random(),
-    //   Math.random() * 1000
-    // );
-    // $('body').append(bouncyDancer.$node);
-
-    // var blinkyDancer= new dancerMakerFunction(
-    //   $("body").height() * Math.random(),
-    //   $("body").width() * Math.random(),
-    //   Math.random() * 1000
-    // );
-    // $('body').append(blinkyDancer.$node);
-
+    window.dancers.push(dancer);
   });
+
+  $(".lineUpButton").on("click", function(event){
+    for(var i = 0; i < window.dancers.length; i++){
+      window.dancers[i].lineUp();
+    }
+  });
+
+  $(".breakUpButton").on("click", function(event){
+      for(var i = 0; i < window.dancers.length; i++){
+      window.dancers[i].breakUp();
+    }
+  });
+
+  $(".dancer").on("mouseover", function(event){
+  for(var i = 0; i < window.dancers.length; i++){
+    window.dancers[i].react();
+  }
+  });
+
 });
 

@@ -21,22 +21,23 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
+  margin: 20px;
   border:10px solid red;
   border-radius:10px;
-  position:absolute;
+  position: absolute;
 }
 .blinkyDancer{
   border:10px solid green;
   border-radius:10px;
-  position:absolute;
+  /* position:absolute; */
 }
 .spinDancer{
   border:10px solid white;
   border-radius:10px;
-  position:absolute;
+  /* position:absolute; */
 }
 .bouncyDancer{
   border:10px solid rgb(255, 230, 0);
   border-radius:10px;
-  position:absolute;
+  /* position:absolute; */
 }
