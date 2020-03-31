@@ -25,3 +25,18 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+.blinkyDancer{
+  border:10px solid green;
+  border-radius:10px;
+  position:absolute;
+}
+.spinDancer{
+  border:10px solid white;
+  border-radius:10px;
+  position:absolute;
+}
+.bouncyDancer{
+  border:10px solid rgb(255, 230, 0);
+  border-radius:10px;
+  position:absolute;
+}
