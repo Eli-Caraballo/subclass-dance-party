@@ -1,5 +1,5 @@
 var MakeBlinkyDancer = function(top, left, timeBetweenSteps) {
-  this.$node = $('<span class="blinkyDancer dancer"></span>');
+  this.$node = $('<span class="blinkyDancer dancer"> <img class = "bitMoji" src="haider.png"></img> </span">');
   MakeDancer.call(this, top, left, timeBetweenSteps);
 };
 

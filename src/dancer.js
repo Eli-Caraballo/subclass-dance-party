@@ -21,7 +21,7 @@ MakeDancer.prototype.setPosition = function(top, left) {
 
 MakeDancer.prototype.lineUp = function(){
   var styleSettings = {
-    top: 350,
+    top: 500,
   };
   this.$node.css(styleSettings);
 };
@@ -32,9 +32,9 @@ MakeDancer.prototype.breakUp = function(){
     $('body').width() * Math.random());
 };
 
-MakeDancer.prototype.react = function() {
-  var styleSettings = {
-    color: orange,
-  };
-  this.$node.css(styleSettings);
-};
+// MakeDancer.prototype.react = function() {
+//   var styleSettings = {
+//     color: orange,
+//   };
+//   this.$node.css(styleSettings);
+// };

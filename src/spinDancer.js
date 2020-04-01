@@ -1,5 +1,5 @@
 var MakeSpinDancer = function(top, left, timeBetweenSteps) {
-  this.$node = $('<span class="spinDancer dancer"></span>');
+  this.$node = $('<span class="spinDancer dancer"> <img class="bitMoji" src="batman.png"></img></span>');
   MakeDancer.call(this, top, left, timeBetweenSteps);
 };
 
@@ -8,9 +8,20 @@ MakeSpinDancer.constructor = MakeSpinDancer;
 
 MakeSpinDancer.prototype.step = function() {
   MakeDancer.prototype.step.call(this);
-  this.$node.animate({width: '1px'});
-  this.$node.animate({width: '10px'});
-  this.$node.animate({height: '10px'});
-  this.$node.animate({width: '1px'});
-  this.$node.animate({height: '1px'});
+  this.$node.animate(
+    { deg: 360 },
+    {
+      duration: 1200,
+      step: function(now) {
+        $(this).css({ transform: 'rotate(' + now + 'deg)' });
+      }
+    });
+  this.$node.animate(
+    { deg: -360 },
+    {
+      duration: 1200,
+      step: function(now) {
+        $(this).css({ transform: 'rotate(' + now + 'deg)' });
+      }
+    });
 };

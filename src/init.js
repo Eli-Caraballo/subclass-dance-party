@@ -39,16 +39,16 @@ $(document).ready(function() {
   });
 
   $(".breakUpButton").on("click", function(event){
-      for(var i = 0; i < window.dancers.length; i++){
+    for(var i = 0; i < window.dancers.length; i++){
       window.dancers[i].breakUp();
     }
   });
 
-  $(".dancer").on("mouseover", function(event){
-  for(var i = 0; i < window.dancers.length; i++){
-    window.dancers[i].react();
-  }
-  });
+  // $(".dancer").on("mouseover", function(event){
+  //   for(var i = 0; i < window.dancers.length; i++){
+  //     window.dancers[i].react();
+  //   }
+  // });
 
 });
 
